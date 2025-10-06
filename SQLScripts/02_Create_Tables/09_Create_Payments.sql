@@ -1,0 +1,31 @@
+USE [GlobalGadgetsDB]
+GO
+
+-------------------------------------------------------------
+--===============| CREATE Payments TABLE |===============----
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Payments](
+    [payment_id] INT IDENTITY(1,1) NOT NULL,
+    [payment_type] NVARCHAR(50) NOT NULL,
+	--PK
+    CONSTRAINT [PK_Payments] PRIMARY KEY CLUSTERED ([payment_id] ASC)
+        WITH (
+		PAD_INDEX = OFF,
+		STATISTICS_NORECOMPUTE = OFF,
+		IGNORE_DUP_KEY = OFF,
+		ALLOW_ROW_LOCKS = ON,
+		ALLOW_PAGE_LOCKS = ON,
+		OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		);
+GO
+--=====================================================================================
+--==CREATE NONCLUSTERED INDEX--========================================================
+CREATE NONCLUSTERED INDEX IX_Payments_Type ON dbo.Payments ([payment_type]ASC)
+WITH(PAD_INDEX = OFF,STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF,
+		DROP_EXISTING = OFF, ONLINE = OFF, IGNORE_DUP_KEY = OFF,ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON,
+		OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+		GO
