@@ -8,4 +8,6 @@ GlobalGadgetDB is a SQL-based database designed for a Gadget retail platform. Th
 - **Triggers and Automation:** Includes triggers for restocking inventory and order updates.
 - **Stored Procedures & Functions:** Implements reusable business logic for reporting and transactions.
 # Database Schema
-The database consists of 13 tables that form the core functionality of the Gadget platform. Below is a visual representation of the database schema:
+The **GlobalGadgetsDB** consists of 13 tables that form the core functionality of the Gadget retail platform. Below is a visual representation of the database schema:
+**Entity Relationship Diagram**
+![ERD Diagram] (image/Global ERD Diagram.jpg)
