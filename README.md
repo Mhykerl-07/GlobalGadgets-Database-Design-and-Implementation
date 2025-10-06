@@ -10,4 +10,5 @@ GlobalGadgetDB is a SQL-based database designed for a Gadget retail platform. Th
 # Database Schema
 The **GlobalGadgetsDB** consists of 13 tables that form the core functionality of the Gadget retail platform. Below is a visual representation of the database schema:
 **Entity Relationship Diagram**
-![ERD Diagram] (image/Global ERD Diagram.jpg)
+![ERD Diagram] (image
+/Global ERD Diagram.jpg)
