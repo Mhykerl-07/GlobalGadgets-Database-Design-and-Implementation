@@ -48,7 +48,7 @@ The repository includes SQL scripts for all database objects, including tables, 
 
 ### Triggers
 - **TR_PreventNegative_Stock:** This will make sure there wont be a negative stock in the inventory.
-- **TR_Restoreonlevel:** Automatically restocks onventory when an order is cancelled.
+- **TR_RestoreOnCancel:** Automatically restocks onventory when an order is cancelled.
 ## Future Enhancements
 There are several potential extensions for this project that could add new features and flexibility:
 
