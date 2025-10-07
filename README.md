@@ -13,7 +13,7 @@ The **GlobalGadgetsDB** consists of 13 tables that form the core functionality o
 **Entity Relationship Diagram**
 ![ERD Diagram](https://github.com/Mhykerl-07/GlobalGadgets-Database-Design-and-Implementation/blob/main/image/Global%20ERD%20Diagram.jpg?raw=true))
 
-#Key Tables
+# Key Tables
 - **Products:** Stores product details like name,price,category, and stock level.
 - **Suppliers:** Contains Supplier names, contact info, and supply records.
 - **Customers:** Holds customer profiles and purchase data,
@@ -22,15 +22,32 @@ The **GlobalGadgetsDB** consists of 13 tables that form the core functionality o
 - **Payments:** Manages payment information and type of transactions.
 - **Shipments:** Logs shipmemt status, date, and delivery details.
 - **Inventory:** Maintains the latest stock information for each product.
-#Installation and Usage
+# Installation and Usage
 1. Clone the Repository:
 
-   git clone https://github.com/I-am-Uchenna/Database-Design-and-Implementation-for-a-Blog-Platform.git
+   git clone (https://github.com/Mhykerl-07/GlobalGadgets-Database-Design-and-Implementation)
 
 2. Import SQL Scripts:
-Open SQL Server Management Studio (SSMS).
-Import the SQL scripts from the SqlScripts/ folder into your database instance.
-Ensure that all tables, procedures, functions, and triggers are correctly created.
-SQL Scripts
+
+- Open SQL Server Management Studio (SSMS).
+- Import the SQL scripts from the SqlScripts/ folder into your database instance.
+- Ensure that all tables, procedures, functions, and triggers are correctly created.
+
+# SQL Scripts
+
 The repository includes SQL scripts for all database objects, including tables, views, stored procedures, functions, and triggers. These scripts are located in the sql/ folder.
-- ***
+
+# Functions and Procedures
+# Scalar Functions
+- **SF_CustomerAge:** - Calculates customer age from birthdate.
+# Stored Procedures
+- **SP_Search_Products_By_Name:** Searches product using partial name matches.
+- **SP_Update_Supplier_Details:** updates supplier contact details.
+- **SP_Order_Placed_Today:** checks for update placed today.
+- **SP_Delete_Delivered_Order:** Deletes orders that the order status is Delivered.
+
+- # Triggers
+- **TR_PreventNegative_Stock:** This will make sure there wont be a negative stock in the inventory.
+- **TR_Restore on level:** Automatically restocks onventory when an order is cancelled.                                                                                                                                                                                                                                                                                                                                                                                       iggers
+- 
+- 
