@@ -1,5 +1,5 @@
 # GlobalGadgetDB
-GlobalGadgetDB is a SQL-based database designed for a Gadget retail platform. The database supports Customers, products, suppliers, shippings, and more. It also includes stored procedures, functions, and triggers to enforce business logic and ensure data integrity. 
+GlobalGadgetDB is a SQL-based database designed for a retail platform. The database supports Customers, products, suppliers, shippings, and more. It also includes stored procedures, functions, and triggers to enforce business logic and ensure data integrity. 
 ## Features
 - **Product & Inventory Management:** Tracks all available gadgets, their prices, stock levels, and suppliers.
 - **Customer Management:** Stores customer details, purchase history, and loyalty tracking.
