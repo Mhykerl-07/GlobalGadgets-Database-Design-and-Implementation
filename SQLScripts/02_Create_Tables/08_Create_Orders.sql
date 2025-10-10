@@ -46,4 +46,11 @@ CREATE NONCLUSTERED INDEX IX_Orders__ShippingID ON dbo.Orders ([shipping_id]ASC)
 WITH(PAD_INDEX = OFF,STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF,
 		DROP_EXISTING = OFF, ONLINE = OFF, IGNORE_DUP_KEY = OFF,ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON,
 		OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+
 		GO
+
+---=====Altering Orders Table-====================
+ALTER TABLE Orders
+ADD employee_id INT;
+ALTER TABLE Orders
+ADD CONSTRAINT FK_Orders_EmployeeID FOREIGN KEY (employee_id) REFERENCES Employees(employee_id);
