@@ -43,7 +43,7 @@ The repository includes SQL scripts for all database objects, including tables, 
 ### Stored Procedures
 - **SP_Search_Products_By_Name:** Searches product using partial name matches.
 - **SP_Update_Supplier_Details:** updates supplier contact details.
-- **SP_Order_Placed_Today:** checks for update placed today.
+- **SP_Order_Placed_Today:** checks for orders placed today and the supplier details
 - **SP_Delete_Delivered_Order:** Deletes orders that the order status is Delivered.
 
 ### Triggers
@@ -52,7 +52,6 @@ The repository includes SQL scripts for all database objects, including tables, 
 ## Future Enhancements
 There are several potential extensions for this project that could add new features and flexibility:
 
-- **Role-Based Access Control:** This will simulate login and permisssion filtering.
 - **Product Archiving:** Implement a system that will move discontinued products from the main table to an archive table.
 - **Supplier Rating System:** Evaluate Supplier performance to know which Supplier delivers accurately.
 - **Multi-Warehouse Support:** Extend inventory tracking across various locations.
